@@ -39,6 +39,7 @@ body{
   min-height: 100vh;
   font-size: 2rem;
   background-color: #fff;
+  margin: 0 auto;
 }
 
 /* LEFT SIDE */
@@ -83,4 +84,27 @@ background-color: #fff;
   line-height: 10rem;
   letter-spacing: -0.02em;
   color: #2B2B35;
+}
+/* main content */
+.main-content {
+  margin:3.8rem 8.5rem 0 20.4rem;
+}
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.nav-login {
+  display: flex;
+}
+.nav-login li{
+  margin-left:2.5rem ;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #000;
 }
