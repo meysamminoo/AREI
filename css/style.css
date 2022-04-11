@@ -1,3 +1,12 @@
+/* FONT FAMILY */
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(./../assets/fonts/LexendDeca-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+/* CSS RESET */
 *{
   padding: 0;
   margin: 0;
@@ -16,11 +25,62 @@ button,input{
 button{
   cursor: pointer;
 }
+image{
+  max-width: 100%;
+  height: auto;
+}
 html{
   font-size: 62.5%;
+  font-family: 'Lexend Deca',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
   width: 100%;
   max-width: 144rem;
-  min-height: 111.8rem;
+  min-height: 100vh;
+  font-size: 2rem;
+  background-color: #fff;
+}
+
+/* LEFT SIDE */
+.left-side {
+  width: 12.8rem;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #D1D6E0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding:  5rem 0;
+}
+.left-side button{
+background-color: #fff;
+}
+.icofont-navigation-menu{
+  font-size: 3.8rem;
+}
+.icon-box{
+  width: 6rem;
+  height: 6rem;
+  border:1px solid #DEE3EE;
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.icofont-cart{
+  font-size: 3rem;
+}
+.hashtag{
+  height: 18rem;
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 10rem;
+  letter-spacing: -0.02em;
+  color: #2B2B35;
 }
