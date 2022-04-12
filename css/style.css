@@ -116,13 +116,14 @@ background-color: #fff;
 }
 /* main content */
 .main-content {
-  padding:3.8rem 8.5rem 0 20.4rem;
   height: 100vh;
 }
 .header-main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+  padding:3.8rem 8.5rem 0 20.4rem;
+
 }
 .logo {
   display: flex;
@@ -143,9 +144,10 @@ background-color: #fff;
 }
 
 .main-title{
-  margin: 10rem 0 4.2rem ;
   display: flex;
   justify-content: space-between;
+  padding:10rem 8.5rem 4rem 20.4rem;
+
 }
 .box-title h1{
   max-width: 70rem;
@@ -189,6 +191,11 @@ background-color: #fff;
 
 .content {  
   display: flex;
+  padding-left: 20.4rem;
+
+}
+.left {
+  flex: 2;
 }
 .content h2{
   font-weight: 600;
@@ -223,11 +230,13 @@ background-color: #fff;
   line-height: 3rem;
 }
 .information {
+  width: 100%;
   display: flex;
-  padding-bottom: 25.5rem;
+  padding-bottom: 20rem;
+  justify-content: space-between;
 }
 .count-box {
-  margin-right: 4em;
+  /* margin-right: 4em; */
 }
 .count-box p {
   text-transform: uppercase;
@@ -248,16 +257,74 @@ background-color: #fff;
   line-height: 3rem;
 }
 .bg {
-  width: 100%;
+  position: relative;
+  flex: 3;
   height: auto;
   z-index: 10;
   background: url(./../assets/images/bg-right.png) no-repeat bottom right;
+
+}
+/* Advertising */
+.advertising {
+  width: 33.4rem;
+  height: 33.4rem;
+  background-color: #2B2B35;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.advertising h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: #fff;
+}
+.advertising img{
+  margin: 0.5rem 0;
+}
+.advertising a{
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  color: #fff;
+  text-decoration: underline;
+  text-transform: uppercase;
+
+}
+.logo-adv {
+  position: absolute;
+  right: 28.4rem;
+  top: 28.4rem;
+  cursor: pointer;
+}
+.arrow{
+  width: 33.4rem;
+  position: absolute;
+  right: 0;
+  top: 15.2rem;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+}
+.arrow i{
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.205);
+}
+.prev {
 }
 /* waranty */
 .waranty {
   background-color: #2B2B35;
   height: 15%;
-  width: 50%;
+  width: 55%;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -287,6 +354,6 @@ background-color: #fff;
 }
 .title-waranty {
   font-weight: 700;
-font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
