@@ -65,8 +65,7 @@ html{
   text-transform: uppercase;
 }
 body{
-  width: 100%;
-  max-width: 144rem;
+  width: min(100%, 144rem);
   height: 100vh;
   font-size: 2rem;
   background-color: #fff;
